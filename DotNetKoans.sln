@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp", "CSharp\CSharp.csproj", "{981750A0-F5CA-42BA-84A1-FE52656B778F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KoanRunner", "KoanRunner\KoanRunner.csproj", "{6631FC60-7B21-4C72-A1EB-A02365A101E0}"
@@ -12,6 +14,12 @@ EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VBNet", "VBNet\VBNet.vbproj", "{1A8E8E55-4B39-43FA-A693-85D5BD48C324}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoKoanRunner.Core", "AutoKoanRunner.Core\AutoKoanRunner.Core.csproj", "{C2C1413F-222B-4F84-8E89-32BC11F79ED2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FF9C7983-24B7-469D-9F9C-ED4A70DC8C15}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		readme.rdoc = readme.rdoc
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
