@@ -8,18 +8,21 @@
     public class AboutOperators : Koan
     {
         [Koan(1)]
-        public void ElvisOperator()
+        public void Elvis()
         {
-            string foo = null;
+            string guitar = null;
+            string Elvis = "dead or alive?";
             try
             {
-                foo = foo?.ToLower();
+                Elvis = guitar?.ToLower();
+                Elvis = "is_alive";
             }
             catch (NullReferenceException ex)
             {
-                foo = "exception";
+                Elvis = "is_dead";
             }
-            Assert.Equal(FILL_ME_IN, foo);            
+            Assert.Equal(Elvis, FILL_ME_IN);            
         }
+
     }
 }

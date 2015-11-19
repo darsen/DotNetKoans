@@ -7,6 +7,7 @@
             get
             {
                 return new string[] {
+                    /*
 				"DotNetKoans.CSharp.AboutAsserts",
 				"DotNetKoans.CSharp.AboutNil",
 				"DotNetKoans.CSharp.AboutArrays",
@@ -17,7 +18,9 @@
 				"DotNetKoans.CSharp.AboutControlStatements",
 				"DotNetKoans.CSharp.AboutGenericContainers",
 				"DotNetKoans.CSharp.AboutDelegates",
-				"DotNetKoans.CSharp.AboutLambdas"
+				"DotNetKoans.CSharp.AboutLambdas",
+                */
+                "DotNetKoans.CSharp.AboutOperators"
                 };
             }
         }
