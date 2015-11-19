@@ -1,8 +1,6 @@
 ﻿namespace DotNetKoans.CSharp
 {
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
     using Xunit;
 
     public class AboutOperators : Koan
@@ -10,16 +8,16 @@
         [Koan(1)]
         public void Elvis()
         {
-            string guitar = null;
-            string Elvis = "dead or alive?";
+            string guitar = new Random().Next(1) > 2 ? "is alien and " : null;
+            string Elvis;
             try
             {
                 Elvis = guitar?.ToLower();
-                Elvis = "is_alive";
+                Elvis += "is alive";
             }
-            catch (NullReferenceException ex)
+            catch (NullReferenceException)
             {
-                Elvis = "is_dead";
+                Elvis = "is dead";
             }
             Assert.Equal(Elvis, FILL_ME_IN);            
         }
