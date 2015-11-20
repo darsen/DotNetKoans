@@ -6,20 +6,20 @@
     public class AboutOperators : Koan
     {
         [Koan(1)]
-        public void Elvis()
+        public void SafeNavigation()
         {
-            string guitar = new Random().Next(1) > 2 ? "is alien and " : null;
-            string Elvis;
+            string marthonMan = new Random().Next(1) > 2 ? "Is it safe? " : null;
+            string safe;
             try
             {
-                Elvis = guitar?.ToLower();
-                Elvis += "is alive";
+                safe = marthonMan?.ToLower();
+                safe += "Yes, it's safe, it's very safe, it's so safe you wouldn't believe it.";
             }
             catch (NullReferenceException)
             {
-                Elvis = "is dead";
+                safe = "No, it's not safe. It's very dangerous. Be careful.";
             }
-            Assert.Equal(Elvis, FILL_ME_IN);            
+            Assert.Equal(safe, FILL_ME_IN);
         }
 
     }
