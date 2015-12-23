@@ -1,6 +1,7 @@
 ﻿namespace DotNetKoans.CSharp
 {
     using System;
+    using System.Collections;
     using Xunit;
 
     public class AboutOperators : Koan
@@ -36,6 +37,22 @@
                 neo = "Blue pill";
             }
             Assert.Equal(neo, FILL_ME_IN);
+        }
+
+        [Koan(3)]
+        public void SafetyCast()
+        {
+            ICollection mrRipley;
+            if (new Random().Next(1) > 2)
+            {
+                mrRipley = new ArrayList();
+            }
+            else
+            {
+                mrRipley = new Hashtable();
+            }
+            var dickie = mrRipley as ArrayList;
+            Assert.Equal(dickie, FILL_ME_IN);
         }
 
     }
