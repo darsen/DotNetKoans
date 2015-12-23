@@ -22,5 +22,21 @@
             Assert.Equal(safe, FILL_ME_IN);
         }
 
+        [Koan(2)]
+        public void NullCoalescing()
+        {
+            string morpheus = "".Length > 5 ? "Red or blue? " : null;
+            string neo;
+            try
+            {
+                neo = morpheus?.ToUpper() ?? "Red pill";
+            }
+            catch (NullReferenceException)
+            {
+                neo = "Blue pill";
+            }
+            Assert.Equal(neo, FILL_ME_IN);
+        }
+
     }
 }
