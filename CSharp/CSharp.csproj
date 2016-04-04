@@ -69,6 +69,7 @@
     <Compile Include="AboutAsserts.cs" />
     <Compile Include="AboutControlStatements.cs" />
     <Compile Include="AboutDelegates.cs" />
+    <Compile Include="AboutExtensionMethods.cs" />
     <Compile Include="AboutGenericContainers.cs" />
     <Compile Include="AboutInheritance.cs" />
     <Compile Include="AboutLambdas.cs" />
