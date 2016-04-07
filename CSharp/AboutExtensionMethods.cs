@@ -40,7 +40,7 @@
         {
             var Orwells = new List<string> {"1984", "Animal Farm", "Homage to Catalonia", "Burmese Days"};
             var great_novels = new List<string> {"Hear of Darkness", "1984", "Animal Farm", "Ulysses"};
-            var Orwells_great_novels = great_novels.Intersect(Orwells).ToArray();
+            var Orwells_great_novels = great_novels.Intersect(Orwells).ToList();
             Assert.Equal(Orwells_great_novels, FILL_ME_IN);
         }
 
@@ -49,7 +49,7 @@
         {
             var Orwells = new List<string> { "1984", "Animal Farm", "Homage to Catalonia", "Burmese Days" };
             var great_novels = new List<string> { "Hear of Darkness", "1984", "Animal Farm", "Ulysses" };
-            var all = great_novels.Union(Orwells).ToArray();
+            var all = great_novels.Union(Orwells).ToList();
             Assert.Equal(all, FILL_ME_IN);
         }
 
